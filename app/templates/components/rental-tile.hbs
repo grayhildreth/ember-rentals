@@ -3,7 +3,7 @@
   {{#if isImageShowing }}
     <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
   {{else}}
-    <button {{action 'imageShow'}}>Show image</button>
+    <button class="btn btn-lg btn-success" {{action 'imageShow'}}>Show image</button>
   {{/if}}
-  <button {{action 'delete' rental}}>Erase This!</button>
+  <button class="btn btn-lg btn-danger" {{action 'delete' rental}}>Erase This!</button>
 </li>
