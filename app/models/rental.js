@@ -7,4 +7,5 @@ export default DS.Model.extend({
   image: DS.attr(),
   bedrooms: DS.attr(),
   reviews: DS.hasMany('review', { async: true })
+  cost: DS.attr()
 });
